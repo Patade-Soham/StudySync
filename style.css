@@ -203,7 +203,7 @@ body{
         align-items: center;
     }
     .left{
-        border: 1px black solid;
+        
         max-width:80%;
         display: flex;
         flex-direction: column;
@@ -213,3 +213,351 @@ body{
     }
 
 }
+
+.company{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.company h1{
+    font-weight: bolder;
+    color: #181818;
+}
+.company-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4.3rem;
+    width: 10rem;
+    color: #555;
+}
+.icon{
+    height: 2.3rem;
+    width: 2.3rem;
+}
+#Google{
+    grid-area: G;
+}
+#Microsoft{
+    grid-area: M;
+}
+#LinkedIn{
+    grid-area: L;
+}
+#VectorEdu{
+    grid-area: V;
+}
+.company-grid{
+    display: grid;
+    grid-template-areas: " G M L V";
+    background-color:rgba(206, 206, 206, 0.534);
+    border-radius: 10px;
+    
+}
+@media screen and (max-width:725px){
+    .company-grid{
+        grid-template-areas: "G M"
+                             "L V";
+    }
+}
+
+.feature-container{
+    margin-top: 5rem;
+    padding: 5rem;
+    background-color:rgba(206, 206, 206, 0.534) ;
+    display: flex;
+    justify-content: center;
+}
+.feature-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    
+    max-width: 52rem;
+    padding: 1rem;
+}
+.icon-container img{
+    height: 3.3rem;
+    width: 3.3rem;
+}
+.icon-container{
+    height: 3.3rem;
+    width: 3.3rem;
+    background-color: #f0f0f0;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    
+}
+.feature-card{
+    
+    height: 12rem;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:2rem 0 2rem 0 ;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 5px black ;
+
+}
+.feature-info{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    color: #f0f0f0;
+}
+.feature-title{
+    font-size: larger;
+    font-weight: bolder;
+}
+#card1{
+    grid-area: a;
+    background-color: rgb(31, 79, 212);
+}
+#card2{
+    grid-area: b;
+    background-color:rgb(255, 16, 96) ;
+}
+#card3{
+    grid-area: c;
+    background-color:rgb(255, 196, 0) ;
+}
+#card4{
+    grid-area: d;
+    background-color: rgb(0, 183, 255);
+}
+#card5{
+    grid-area: e;
+    background-color: green;
+}
+#card6{
+    grid-area: f;
+    background-color: var(--primary-color);
+}
+.feature-grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f"   
+    ;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.4rem;
+    align-items: center;
+}
+.main-title{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.main-description{
+    color: #555;
+    font-weight: 800;
+}
+@media screen and (max-width:795px ){
+    .feature-grid{
+        display: grid;
+        gap: 2rem;
+        grid-template-areas: 
+        "a "
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        ;
+    }
+}
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: auto;
+}
+.testimonial-content{   
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 2rem;
+    align-items: center;
+}
+#p1{
+    grid-area: X;
+}
+#p2{
+    grid-area:Y;
+}
+#p3{
+    grid-area: Z;
+}
+.testimonial-grid{
+    max-width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "X Y Z"
+    ;
+    gap: 1rem;
+}
+.testimonial-avatar img{
+    height: 5.5rem;
+    width: 5.5rem;
+}
+.testimonial-card{
+    height: 15rem;
+    width: 24rem;
+    box-shadow: #9e9e9e 0.5px 0.5px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.testimonial-card:hover{
+    transform: scale(1.05);;
+    box-shadow: 0 4px 8px rbga(0,0,0,0.2);
+    border: 1px solid rgb(0, 89, 255);
+}
+.testimonial-text{
+    color: #555;
+    font-weight: 500;
+}
+
+.testimonial-desc{
+    color: #555;
+    font-weight: 500;
+}
+.testimonial-name{
+    color: #14349c;
+}
+.testimonial-title{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #181818;
+}
+@media screen and (max-width:1600px){
+    .testimonial-grid{
+            grid-template-areas: 
+    "X"
+    "Y"
+    "Z"
+    ;
+    }
+}
+.news-left{
+    height: 90%;
+    width: 50%;
+    
+    padding: 1rem;
+
+}
+.news-left img{
+    height: 99%;
+    width: 99%;
+    border-radius: 20px;
+}
+.newsletter-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-content{
+    
+    max-width: 80%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(206, 206, 206, 0.534);
+    border: rgba(206, 206, 206, 0.534) 1px solid;
+    border-radius: 10px;
+}
+.news-right{
+    
+    height: 15rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.news-send-button{
+    height: 2.9rem;
+    width: 6.2rem;
+    border-radius: 7px ;
+    background-color: #5e60dd;
+    color: #f0f0f0;
+    font-size: large;
+    font-weight: bolder;
+    border: #5e60dd;
+    box-shadow: #9e9e9e 0.5px 0.5px 3px;
+
+}
+.news-email {
+    height: 2.8rem;
+    width: 13rem;
+    border-radius: 5px ;
+    border: #9e9e9e 1px solid;
+    font-size: large;
+    font-weight: bolder;
+}
+.news-send-button:hover{
+    background-color: #4d4fbd;
+    transform: scale(1.01);
+}
+.news-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.news-title{
+    font-size: 2.5rem;
+    color:var(--primary-color);
+    font-weight: bolder;
+}
+.news-desc{
+    color: #555;
+    font-weight: 400;
+}
+.privacy-policy{
+    font-size: 0.897rem;
+    color: #555;
+}
+.news-link{
+    color: #2563eb;
+}
+.news-link:hover{
+    color: #33347e;
+}
+@media screen and (max-width:1220px) {
+    .newsletter-content{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .news-left{
+        width: 90%;
+    }
+}
+
